@@ -10,16 +10,16 @@
     <div class="skills-info skills-second-style">
 
 
-        @foreach ($skills as $skill)
+        @foreach ($skills as $item)
             <!-- Skill -->
             <div class="skill clearfix">
-                <h4>{{$skill->name}}</h4>
-                <div class="skill-value">{{$skill->percent}}%</div>
+                <h4>{{$item->name}}</h4>
+                <div class="skill-value">{{$item->percent}}%</div>
             </div>
-            <div class="skill-container skill-{{$skill->id}}">
+            <div class="skill-container skill-{{$item->id}}">
                 <div class="skill-percentage"></div>
             </div>
-            <!-- End of Skill {{$skill->id}} -->
+            <!-- End of Skill {{$item->id}} -->
         @endforeach
 
     </div>
