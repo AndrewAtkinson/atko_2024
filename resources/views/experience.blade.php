@@ -8,8 +8,6 @@
         <div class="left-part">
             <h5 class="item-period">{{ \Carbon\Carbon::parse($item->start_date)->format('Y')}} - {{ $item->end_date ? \Carbon\Carbon::parse($item->end_date)->format('Y') : 'Present'}}</h5>
             <span class="item-company">{{ $item->company }}</span>
-            <span class="item-company">{{ $item->company }}</span>
-            <span class="item-company">{{ $item->company }}</span>
         </div>
         <div class="divider"></div>
         <div class="right-part">
