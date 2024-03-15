@@ -3,44 +3,19 @@
 </div>
 
 <div class="timeline timeline-second-style clearfix">
+    @foreach ($experiences as $item)
     <div class="timeline-item clearfix">
         <div class="left-part">
-            <h5 class="item-period">2016 - Current</h5>
-            <span class="item-company">Google</span>
+            <h5 class="item-period">{{ \Carbon\Carbon::parse($item->start_date)->format('Y')}} - {{ $item->end_date ? \Carbon\Carbon::parse($item->end_date)->format('Y') : 'Present'}}</h5>
+            <span class="item-company">{{ $item->company }}</span>
+            <span class="item-company">{{ $item->company }}</span>
+            <span class="item-company">{{ $item->company }}</span>
         </div>
         <div class="divider"></div>
         <div class="right-part">
-            <h4 class="item-title">Lead Ui/Ux Designer</h4>
-            <p>Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis.
-                Phasellus eleifend tristique posuere. Sed vitae dui nec magna.</p>
+            <h4 class="item-title">{{ $item->title }}</h4>
+            <p>{{ $item->description }}</p>
         </div>
     </div>
-
-    <div class="timeline-item clearfix">
-        <div class="left-part">
-            <h5 class="item-period">2013 - 2016</h5>
-            <span class="item-company">Adobe</span>
-        </div>
-        <div class="divider"></div>
-        <div class="right-part">
-            <h4 class="item-title">Senior Ui/Ux Designer</h4>
-            <p>Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla
-                tristique, ornare felis id, congue libero. Nam volutpat euismod
-                quam.</p>
-        </div>
-    </div>
-
-    <div class="timeline-item clearfix">
-        <div class="left-part">
-            <h5 class="item-period">2011 - 2013</h5>
-            <span class="item-company">Google</span>
-        </div>
-        <div class="divider"></div>
-        <div class="right-part">
-            <h4 class="item-title">Junior Ui/Ux Designer</h4>
-            <p>Duis mollis nunc quis quam viverra venenatis. Nulla nulla arcu, congue
-                vitae nunc ac, sodales ultricies diam. Nullam justo leo, tincidunt sit
-                amet.</p>
-        </div>
-    </div>
+    @endforeach
 </div>
