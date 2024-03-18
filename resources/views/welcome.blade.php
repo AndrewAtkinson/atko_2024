@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>BreezyCV - Resume / CV / vCard Template</title>
+    <title>Andrew Atkinson - {{$experiences->first()->title}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <meta name="description" content="BreezyCV - Resume / CV / vCard Template"/>
     <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio"/>
@@ -89,9 +89,9 @@
 
             <div class="social-links">
                 <ul>
-                    <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/andrewatkinsonvs/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.facebook.com/andyatkinson84" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://twitter.com/Fever84" target="_blank"><i class="fab fa-twitter"></i></a></li>
                 </ul>
             </div>
 
