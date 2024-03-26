@@ -396,25 +396,8 @@
 
                             <div class="white-space-10"></div>
 
-                            <!-- Knowledges -->
-                            <div class="block-title">
-                                <h3>Knowledges</h3>
-                            </div>
-
-                            <ul class="knowledges">
-                                <li>Marketing</li>
-                                <li>Print</li>
-                                <li>Digital Design</li>
-                                <li>Social Media</li>
-                                <li>Time Management</li>
-                                <li>Communication</li>
-                                <li>Problem-Solving</li>
-                                <li>Social Networking</li>
-                                <li>Flexibility</li>
-                            </ul>
-                            <!-- End of Knowledges -->
+                            @include('knowledge')
                         </div>
-                        <!-- End of Skills & Certificates -->
                     </div>
 
             </div>

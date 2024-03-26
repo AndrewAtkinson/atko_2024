@@ -18,5 +18,8 @@ Route::get('/', function () {
             'skills' => Cache::remember('skills', '525960', function () {
                 return Skill::all();
             }),
+            'knowledge' => Cache::remember('knowledge', '525960', function () {
+                return Experience::masteries();
+            }),
         ]);
 });

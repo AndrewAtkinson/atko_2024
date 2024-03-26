@@ -23,6 +23,11 @@ class Experience extends Model
      */
     public function scopeDate($query)
     {
-        $query->orderBy('start_date', 'desc');
+        return $query->orderBy('start_date', 'desc');
+    }
+
+    public function scopeMasteries($query)
+    {
+        return $query->pluck('masteries')->flatten()->unique();
     }
 }
