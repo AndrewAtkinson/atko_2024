@@ -21,5 +21,11 @@ Route::get('/', function () {
             'knowledge' => Cache::remember('knowledge', '525960', function () {
                 return Experience::masteries();
             }),
+            'companies' => Cache::remember('companies', '525960', function () {
+                return Experience::companies();
+            }),
+            'firstJobStartDate' => Cache::remember('firstJobStartDate', '1440', function () {
+                return Experience::firstJobStartDate();
+            }),
         ]);
 });

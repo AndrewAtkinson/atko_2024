@@ -30,4 +30,14 @@ class Experience extends Model
     {
         return $query->pluck('masteries')->flatten()->unique();
     }
+
+    public function scopeCompanies($query)
+    {
+        return $query->pluck('company')->unique()->count();
+    }
+
+    public function scopeFirstJobStartDate($query)
+    {
+        return $query->orderBy('start_date')->pluck('start_date')->first();
+    }
 }
