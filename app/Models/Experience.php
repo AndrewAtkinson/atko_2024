@@ -9,7 +9,11 @@ class Experience extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['company', 'title', 'description', 'start_date', 'end_date'];
+    protected $casts = [
+        'masteries' => 'array',
+    ];
+
+    protected $fillable = ['company', 'title', 'description', 'masteries', 'start_date', 'end_date'];
 
     /**
      * Scope a query to sort by date.

@@ -26,6 +26,7 @@ class ExperienceResource extends Resource
                 Forms\Components\TextInput::make('company')->required(),
                 Forms\Components\TextInput::make('title')->required(),
                 Forms\Components\MarkdownEditor::make('description')->required(),
+                Forms\Components\TagsInput::make('masteries')->required(),
                 Forms\Components\DatePicker::make('start_date')->required(),
                 Forms\Components\DatePicker::make('end_date'),
             ]);
@@ -37,6 +38,7 @@ class ExperienceResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('company')->sortable(),
                 Tables\Columns\TextColumn::make('title')->sortable(),
+                Tables\Columns\TagsColumn::make('masteries')->sortable(),
                 Tables\Columns\TextColumn::make('start_date')->sortable(),
                 Tables\Columns\TextColumn::make('end_date')->sortable(),
             ])
