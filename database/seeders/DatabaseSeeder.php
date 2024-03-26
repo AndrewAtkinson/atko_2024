@@ -16,14 +16,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-
+        //Education
         Education::factory()->create([
             'course' => 'Master of Science in Digital Forensics',
             'university' => 'Teesside University',
             'description' => 'A program focusing on computer science principles within the context of a cyber investigation. Emphasizes collecting, examining, and interpreting digital evidence. Includes practical sessions using industry-standard software and practices.',
             'date' => '2010-07-01',
         ]);
-
         Education::factory()->create([
             'course' => 'Bachelor of Science in Applied Computing',
             'university' => 'Northumbria University',
@@ -31,54 +30,57 @@ class DatabaseSeeder extends Seeder
             'date' => '2009-07-01',
         ]);
 
+        //Experience
         Experience::factory()->create([
             'company' => 'Visualsoft',
             'title' => 'Technical Lead',
             'description' => 'Lead engineer role with responsibilities including overseeing project development and ensuring technical excellence.',
             'start_date' => '2022-01-01',
-            'end_date' => null
+            'end_date' => null,
+            'masteries' => ["PHP", "MySQL", "Docker", "Laravel", "Vue", "inertiajs"]
         ]);
-
         Experience::factory()->create([
             'company' => 'Visualsoft',
             'title' => 'EPOS Team Lead',
             'description' => 'Managed a dedicated EPOS team, focused on supporting and developing EPOS integrations with the VS3 Platform.',
             'start_date' => '2019-01-01',
             'end_date' => '2022-01-01',
+            'masteries' => ["Project Management", "Team Leadership", "EPOS Integration"]
         ]);
-
         Experience::factory()->create([
             'company' => 'Visualsoft',
             'title' => 'Enterprise Senior Developer',
             'description' => 'Worked on complex projects for our biggest Enterprise clients, providing high-quality software solutions.',
             'start_date' => '2017-07-01',
             'end_date' => '2019-01-01',
+            'masteries' => ["PHP", "JavaScript", "Enterprise Solutions"]
         ]);
-
         Experience::factory()->create([
             'company' => 'Visualsoft',
             'title' => 'Senior Developer',
             'description' => 'Contributed to client and internal features for our world-leading ecommerce platform, focusing on delivering high-performance solutions.',
             'start_date' => '2016-10-01',
             'end_date' => '2017-07-01',
+            'masteries' => ["PHP", "JavaScript", "Performance Optimization"]
         ]);
-
         Experience::factory()->create([
             'company' => 'Visualsoft',
             'title' => 'Developer',
             'description' => 'Developed client and internal features for our world-leading ecommerce platform, contributing to its continuous improvement.',
             'start_date' => '2011-07-01',
             'end_date' => '2016-10-01',
+            'masteries' => ["PHP", "JavaScript", "Web Development"]
         ]);
-
         Experience::factory()->create([
             'company' => 'Xbite Ltd',
             'title' => 'Web Developer',
             'description' => 'Developed new and existing functionality for Xbite\'s retail websites across multiple countries, ensuring a seamless user experience.',
             'start_date' => '2010-11-01',
             'end_date' => '2011-07-01',
+            'masteries' => ["PHP", "HTML", "CSS"]
         ]);
 
+        //Skills
         Skill::factory()->create([
             'name' => 'PHP',
             'percent' => '90',
