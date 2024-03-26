@@ -16,12 +16,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
-
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
 
         Education::factory()->create([
             'course' => 'Master of Science in Digital Forensics',
@@ -39,7 +33,7 @@ class DatabaseSeeder extends Seeder
 
         Experience::factory()->create([
             'company' => 'Visualsoft',
-            'title' => 'Lead Engineer',
+            'title' => 'Technical Lead',
             'description' => 'Lead engineer role with responsibilities including overseeing project development and ensuring technical excellence.',
             'start_date' => '2022-01-01',
             'end_date' => null
