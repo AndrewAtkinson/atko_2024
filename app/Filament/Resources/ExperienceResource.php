@@ -27,11 +27,13 @@ class ExperienceResource extends Resource
                 Forms\Components\TextInput::make('title')->required(),
                 Forms\Components\MarkdownEditor::make('description')->required(),
                 Forms\Components\TagsInput::make('masteries')->required(),
-                Forms\Components\DatePicker::make('start_date')->required(),
-                Forms\Components\DatePicker::make('end_date'),
+                Forms\Components\Fieldset::make('Dates')
+                ->schema([
+                    Forms\Components\DatePicker::make('start_date')->required(),
+                    Forms\Components\DatePicker::make('end_date')
+                ])
             ]);
-    }
-
+        }
     public static function table(Table $table): Table
     {
         return $table
