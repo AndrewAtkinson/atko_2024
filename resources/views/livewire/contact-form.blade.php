@@ -8,7 +8,7 @@
 
                             <form id="contact_form" class="contact-form" wire:submit="save">
 
-                                <div class="messages"></div>
+                                <div class="messages">{{ session('status') }}</div>
 
                                 <div class="controls two-columns">
                                     <div class="fields clearfix">

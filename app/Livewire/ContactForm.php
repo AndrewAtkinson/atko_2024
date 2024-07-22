@@ -28,7 +28,9 @@ class ContactForm extends Component
             $this->only(['name', 'subject', 'email', 'message'])
         );
 
-        // $this->reset(); 
+        session()->flash('status', 'Thank you for getting in touch!');
+
+        $this->reset(); 
     }
 
     public function render()
