@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Resources\SkillResource\Pages;
+namespace App\Filament\Resources\ContactFormResource\Pages;
 
 use App\Filament\Resources\ContactFormRequestsResource;
 use Filament\Actions;
