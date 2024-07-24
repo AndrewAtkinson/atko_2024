@@ -4,12 +4,11 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\ContactFormResource\Pages\ManageContactFormRequests;
 use App\Models\contactFormRequest;
+use Filament\Infolists;
+use Filament\Infolists\Infolist;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Filament\Infolists;
-use Filament\Infolists\Infolist;
-
 
 class ContactFormRequestsResource extends Resource
 {
@@ -18,17 +17,16 @@ class ContactFormRequestsResource extends Resource
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function infolist(Infolist $infolist): Infolist
-{
-    return $infolist
-        ->schema([
-            Infolists\Components\TextEntry::make('name'),
-            Infolists\Components\TextEntry::make('email'),
-            Infolists\Components\TextEntry::make('subject'),
-            Infolists\Components\TextEntry::make('message')->columnSpanFull(),
-            Infolists\Components\TextEntry::make('created_at'),
-        ]);
-}
-
+    {
+        return $infolist
+            ->schema([
+                Infolists\Components\TextEntry::make('name'),
+                Infolists\Components\TextEntry::make('email'),
+                Infolists\Components\TextEntry::make('subject'),
+                Infolists\Components\TextEntry::make('message')->columnSpanFull(),
+                Infolists\Components\TextEntry::make('created_at'),
+            ]);
+    }
 
     public static function table(Table $table): Table
     {

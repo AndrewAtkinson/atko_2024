@@ -2,12 +2,11 @@
 
 namespace App\Filament\Widgets;
 
-use App\Models\Skill;
 use App\Models\Education;
 use App\Models\Experience;
+use App\Models\Skill;
 use Filament\Widgets\StatsOverviewWidget as BaseWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;
-
 
 class StatsOverview extends BaseWidget
 {

@@ -83,11 +83,11 @@
                 </ul>
             </div>
 
-            <div class="header-buttons">
+            {{-- <div class="header-buttons">
                 <a href="#" target="_blank" class="btn btn-primary">Download CV</a>
-            </div>
+            </div> --}}
 
-            <div class="copyrights">© 2020 All rights reserved.</div>
+            <div class="copyrights">© {{ date('Y') }} All rights reserved.</div>
         </header>
 
         <!-- Mobile Navigation -->
@@ -134,44 +134,7 @@
 
                         <!-- Personal Information -->
                         <div class="row">
-                            <div class="col-xs-12 col-sm-7">
-                                <p>Proin volutpat mauris ac pellentesque pharetra. Suspendisse congue elit vel odio
-                                    suscipit, sit amet tempor nisl imperdiet. Quisque ex justo, faucibus ut mi in,
-                                    condimentum finibus dolor. Aliquam vitae hendrerit dolor, eget imperdiet mauris.
-                                    Maecenas et ante id ipsum condimentum dictum et vel massa. Ut in imperdiet dolor,
-                                    vel consectetur dui.</p>
-                            </div>
-
-                            <div class="col-xs-12 col-sm-5">
-                                <div class="info-list">
-                                    <ul>
-                                        <li>
-                                            <span class="title">Age</span>
-                                            <span class="value">32</span>
-                                        </li>
-
-                                        <li>
-                                            <span class="title">Residence</span>
-                                            <span class="value">USA</span>
-                                        </li>
-
-                                        <li>
-                                            <span class="title">Address</span>
-                                            <span class="value">88 Some Street, Some Town</span>
-                                        </li>
-
-                                        <li>
-                                            <span class="title">e-mail</span>
-                                            <span class="value">email@example.com</span>
-                                        </li>
-
-                                        <li>
-                                            <span class="title">Phone</span>
-                                            <span class="value">+0123 123 456 789</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                            @include('about-me')
                         </div>
                         <!-- End of Personal Information -->
 
@@ -196,9 +159,7 @@
                                             </div>
                                             <div class="ci-text">
                                                 <h4>Ecommerce</h4>
-                                                <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio
-                                                    tortor bibendum massa, sit amet ultricies ex lectus scelerisque
-                                                    nibh. Ut non sodales.</p>
+                                                <p>I design, develop, and maintain robust e-commerce platforms API's and features. From creating custom features and ensuring website security and performance, I handle every technical aspect to provide a seamless online shopping experience.</p>
                                             </div>
                                         </div>
                                         <div class="info-block-w-icon">
@@ -206,44 +167,14 @@
                                                 <i class="lnr lnr-laptop-phone"></i>
                                             </div>
                                             <div class="ci-text">
-                                                <h4>Web Design</h4>
-                                                <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio
-                                                    tortor bibendum massa, sit amet ultricies ex lectus scelerisque
-                                                    nibh. Ut non sodales.</p>
+                                                <h4>Tech Enthusias</h4>
+                                                <p>I stay updated with the latest trends and technologies in e-commerce, from advanced security measures to analytics, ensuring my business remains at the cutting edge.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-xs-12 col-sm-6">
-                                <div class="col-inner">
-                                    <div class="info-list-w-icon">
-                                        <div class="info-block-w-icon">
-                                            <div class="ci-icon">
-                                                <i class="lnr lnr-pencil"></i>
-                                            </div>
-                                            <div class="ci-text">
-                                                <h4>Copywriting</h4>
-                                                <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio
-                                                    tortor bibendum massa, sit amet ultricies ex lectus scelerisque
-                                                    nibh. Ut non sodales.</p>
-                                            </div>
-                                        </div>
-                                        <div class="info-block-w-icon">
-                                            <div class="ci-icon">
-                                                <i class="lnr lnr-flag"></i>
-                                            </div>
-                                            <div class="ci-text">
-                                                <h4>Management</h4>
-                                                <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio
-                                                    tortor bibendum massa, sit amet ultricies ex lectus scelerisque
-                                                    nibh. Ut non sodales.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <!-- End of Services -->
 

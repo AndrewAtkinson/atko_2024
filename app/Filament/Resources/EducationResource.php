@@ -3,7 +3,6 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\EducationResource\Pages;
-use App\Filament\Resources\EducationResource\RelationManagers;
 use App\Models\Education;
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -64,8 +63,8 @@ class EducationResource extends Resource
         return ['course', 'university'];
     }
 
-    public static function getGlobalSearchResultTitle(Model $record): string | Htmlable
+    public static function getGlobalSearchResultTitle(Model $record): string|Htmlable
     {
-        return $record->course . ' - ' . $record->university;
+        return $record->course.' - '.$record->university;
     }
 }

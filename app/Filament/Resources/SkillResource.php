@@ -60,7 +60,7 @@ class SkillResource extends Resource
         return ['name', 'description'];
     }
 
-    public static function getGlobalSearchResultTitle(Model $record): string | Htmlable
+    public static function getGlobalSearchResultTitle(Model $record): string|Htmlable
     {
         return $record->name;
     }

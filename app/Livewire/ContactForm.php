@@ -2,9 +2,9 @@
 
 namespace App\Livewire;
 
-use Livewire\Attributes\Validate; 
-use Livewire\Component;
 use App\Models\contactFormRequest;
+use Livewire\Attributes\Validate;
+use Livewire\Component;
 
 class ContactForm extends Component
 {
@@ -30,7 +30,7 @@ class ContactForm extends Component
 
         session()->flash('status', 'Thank you for getting in touch!');
 
-        $this->reset(); 
+        $this->reset();
     }
 
     public function render()

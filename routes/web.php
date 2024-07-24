@@ -3,8 +3,8 @@
 use App\Models\Education;
 use App\Models\Experience;
 use App\Models\Skill;
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome')
