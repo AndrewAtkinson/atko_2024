@@ -1,10 +1,3 @@
- <div class="col-xs-12 col-sm-8">
-                            <div class="lmpixels-map">
-                                <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                            </div>
-                            <div class="block-title">
-                                <h3>How Can I <span>Help You?</span></h3>
-                            </div>
 
                             <form id="contact_form" class="contact-form" wire:submit="save">
 
@@ -58,4 +51,3 @@
                                     <input type="submit" value="Send message">
                                 </div>
                             </form>
-                        </div>

@@ -301,21 +301,14 @@
                         <div class="col-xs-12 col-sm-4">
                             <div class="lm-info-block gray-default">
                                 <i class="lnr lnr-map-marker"></i>
-                                <h4>San Francisco</h4>
-                                <span class="lm-info-block-value"></span>
-                                <span class="lm-info-block-text"></span>
-                            </div>
-
-                            <div class="lm-info-block gray-default">
-                                <i class="lnr lnr-phone-handset"></i>
-                                <h4>415-832-2000</h4>
+                                <h4>Hartlepool, UK</h4>
                                 <span class="lm-info-block-value"></span>
                                 <span class="lm-info-block-text"></span>
                             </div>
 
                             <div class="lm-info-block gray-default">
                                 <i class="lnr lnr-envelope"></i>
-                                <h4>alex@example.com</h4>
+                                <h4>atkinson.andy@gmail.com</h4>
                                 <span class="lm-info-block-value"></span>
                                 <span class="lm-info-block-text"></span>
                             </div>
@@ -327,13 +320,21 @@
                                 <span class="lm-info-block-text"></span>
                             </div>
 
-
                         </div>
                         <!-- End of Contact Info -->
 
                         <!-- Contact Form -->
-                        @livewire('contact-form')
-                        <!-- End of Contact Form -->
+                        <div class="col-xs-12 col-sm-8">
+                            <div class="lmpixels-map">
+                                <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            </div>
+                            <div class="block-title">
+                                <h3>How Can I <span>Help You?</span></h3>
+                            </div>
+
+                            @livewire('contact-form')
+                            <!-- End of Contact Form -->
+                        </div>
                     </div>
 
                 </div>
