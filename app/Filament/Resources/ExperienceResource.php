@@ -3,7 +3,6 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\ExperienceResource\Pages;
-use App\Filament\Resources\ExperienceResource\RelationManagers;
 use App\Models\Experience;
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -28,12 +27,13 @@ class ExperienceResource extends Resource
                 Forms\Components\MarkdownEditor::make('description')->required(),
                 Forms\Components\TagsInput::make('masteries')->required(),
                 Forms\Components\Fieldset::make('Dates')
-                ->schema([
-                    Forms\Components\DatePicker::make('start_date')->required(),
-                    Forms\Components\DatePicker::make('end_date')
-                ])
+                    ->schema([
+                        Forms\Components\DatePicker::make('start_date')->required(),
+                        Forms\Components\DatePicker::make('end_date'),
+                    ]),
             ]);
-        }
+    }
+
     public static function table(Table $table): Table
     {
         return $table
@@ -70,8 +70,8 @@ class ExperienceResource extends Resource
         return ['title', 'company', 'description'];
     }
 
-    public static function getGlobalSearchResultTitle(Model $record): string | Htmlable
+    public static function getGlobalSearchResultTitle(Model $record): string|Htmlable
     {
-        return $record->title . ' - ' . $record->company;
+        return $record->title.' - '.$record->company;
     }
 }

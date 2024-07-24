@@ -5,8 +5,6 @@ namespace Database\Seeders;
 use App\Models\Education;
 use App\Models\Experience;
 use App\Models\Skill;
-use App\Models\User;
-
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -37,7 +35,7 @@ class DatabaseSeeder extends Seeder
             'description' => 'Lead engineer role with responsibilities including overseeing project development and ensuring technical excellence.',
             'start_date' => '2022-01-01',
             'end_date' => null,
-            'masteries' => ["PHP", "MySQL", "Docker", "Laravel", "Vue", "inertiajs"]
+            'masteries' => ['PHP', 'MySQL', 'Docker', 'Laravel', 'Vue', 'inertiajs'],
         ]);
         Experience::factory()->create([
             'company' => 'Visualsoft',
@@ -45,7 +43,7 @@ class DatabaseSeeder extends Seeder
             'description' => 'Managed a dedicated EPOS team, focused on supporting and developing EPOS integrations with the VS3 Platform.',
             'start_date' => '2019-01-01',
             'end_date' => '2022-01-01',
-            'masteries' => ["Project Management", "Team Leadership", "EPOS Integration"]
+            'masteries' => ['Project Management', 'Team Leadership', 'EPOS Integration'],
         ]);
         Experience::factory()->create([
             'company' => 'Visualsoft',
@@ -53,7 +51,7 @@ class DatabaseSeeder extends Seeder
             'description' => 'Worked on complex projects for our biggest Enterprise clients, providing high-quality software solutions.',
             'start_date' => '2017-07-01',
             'end_date' => '2019-01-01',
-            'masteries' => ["PHP", "JavaScript", "Enterprise Solutions"]
+            'masteries' => ['PHP', 'JavaScript', 'Enterprise Solutions'],
         ]);
         Experience::factory()->create([
             'company' => 'Visualsoft',
@@ -61,7 +59,7 @@ class DatabaseSeeder extends Seeder
             'description' => 'Contributed to client and internal features for our world-leading ecommerce platform, focusing on delivering high-performance solutions.',
             'start_date' => '2016-10-01',
             'end_date' => '2017-07-01',
-            'masteries' => ["PHP", "JavaScript", "Performance Optimization"]
+            'masteries' => ['PHP', 'JavaScript', 'Performance Optimization'],
         ]);
         Experience::factory()->create([
             'company' => 'Visualsoft',
@@ -69,7 +67,7 @@ class DatabaseSeeder extends Seeder
             'description' => 'Developed client and internal features for our world-leading ecommerce platform, contributing to its continuous improvement.',
             'start_date' => '2011-07-01',
             'end_date' => '2016-10-01',
-            'masteries' => ["PHP", "JavaScript", "Web Development"]
+            'masteries' => ['PHP', 'JavaScript', 'Web Development'],
         ]);
         Experience::factory()->create([
             'company' => 'Xbite Ltd',
@@ -77,7 +75,7 @@ class DatabaseSeeder extends Seeder
             'description' => 'Developed new and existing functionality for Xbite\'s retail websites across multiple countries, ensuring a seamless user experience.',
             'start_date' => '2010-11-01',
             'end_date' => '2011-07-01',
-            'masteries' => ["PHP", "HTML", "CSS"]
+            'masteries' => ['PHP', 'HTML', 'CSS'],
         ]);
 
         //Skills
