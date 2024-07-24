@@ -1,9 +1,5 @@
 <?php
 
-use App\Models\Education;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use function Pest\Laravel\assertDatabaseHas;
-
 it('fetches an education record correctly', function () {
 
     // Assert that the education record is in the database
