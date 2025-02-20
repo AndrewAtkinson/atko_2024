@@ -5,13 +5,26 @@
 
 version: 2
 updates:
-  - package-ecosystem: "github-actions" 
+  - package-ecosystem: "composer"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "daily"
+    open-pull-requests-limit: 10
     automerge:
       enable: true
       allow:
-        - dependency-type: "production" # Or your dependency types
+        - dependency-type: "production"
         - update-type: "minor"
-        - update-type: "patch" # Add this line for patch updates
+        - update-type: "patch"
+
+  - package-ecosystem: "github-actions" # Add this for GitHub Actions
+    directory: "/.github" # Or where your workflows are
+    schedule:
+      interval: "daily" # Adjust as needed
+    open-pull-requests-limit: 10
+    automerge:
+      enable: true
+      allow:
+        - dependency-type: "production" # Usually applies to actions
+        - update-type: "minor"
+        - update-type: "patch"
