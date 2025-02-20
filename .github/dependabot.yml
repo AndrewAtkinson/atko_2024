@@ -10,21 +10,9 @@ updates:
     schedule:
       interval: "daily"
     open-pull-requests-limit: 10
-    automerge:
-      enable: true
-      allow:
-        - dependency-type: "production"
-        - update-type: "minor"
-        - update-type: "patch"
 
   - package-ecosystem: "github-actions" 
     directory: "/.github" 
     schedule:
       interval: "daily" 
     open-pull-requests-limit: 10
-    automerge:
-      enable: true
-      allow:
-        - dependency-type: "production" 
-        - update-type: "minor"
-        - update-type: "patch"
