@@ -12,6 +12,6 @@ updates:
     automerge:
       enable: true
       allow:
-        - dependency-type: "production" # Or your dependency types
+        - dependency-type: "main"
         - update-type: "minor"
-        - update-type: "patch" # Add this line for patch updates
+        - update-type: "patch"
