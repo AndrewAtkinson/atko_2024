@@ -1,0 +1,38 @@
+name: Dependabot Auto Merge
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    branches: [main] # Replace with your main branch name
+
+jobs:
+  auto_merge:
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: write
+    steps:
+      - name: Approve PR
+        if: github.event.pull_request.reviewers.size == 0
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.rest.pulls.createReview({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.issue.number,
+              event: 'APPROVE'
+            })
+      - name: Enable auto merge
+        uses: peter-murray/release- Drafter@v5
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          config: |
+            {
+              "name": "Dependabot Auto Merge",
+              "draft": false,
+              "prerelease": false,
+              "auto_merge": true
+            }
