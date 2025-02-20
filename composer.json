@@ -9,7 +9,7 @@
         "filament/filament": "^3.2",
         "laravel/framework": "^11.0",
         "laravel/horizon": "^5.25",
-        "laravel/prompts": "^0.1.16",
+        "laravel/prompts": "^0.3.5",
         "laravel/telescope": "^5.0",
         "laravel/tinker": "^2.9"
     },
