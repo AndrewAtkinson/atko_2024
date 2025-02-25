@@ -8,8 +8,8 @@
     <div class="info-list">
         <ul>
             <li>
-                <span class="title">England</span>
-                <span class="value">USA</span>
+                <span class="title">Residence</span>
+                <span class="value">England</span>
             </li>
 
             <li>
