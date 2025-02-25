@@ -9,7 +9,7 @@
         <ul>
             <li>
                 <span class="title">Residence</span>
-                <span class="value">USA</span>
+                <span class="value">England</span>
             </li>
 
             <li>
