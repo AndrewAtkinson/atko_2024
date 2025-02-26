@@ -7,7 +7,7 @@
     "require": {
         "php": "^8.2",
         "filament/filament": "^3.2",
-        "laravel/framework": "^11.0",
+        "laravel/framework": "^12.0",
         "laravel/horizon": "^5.25",
         "laravel/prompts": "^0.3.5",
         "laravel/telescope": "^5.0",
