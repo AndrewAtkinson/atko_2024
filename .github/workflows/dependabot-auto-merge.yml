@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Approve PR
         if: github.event.pull_request.reviewers.size == 0
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
@@ -27,7 +27,7 @@ jobs:
             })
 
       - name: Enable auto merge
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
@@ -35,7 +35,6 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               pull_number: context.issue.number,
-              auto_merge: {
-                enabled: true
-              }
+              event: 'MERGE',
+              merge_method: 'squash'
             })
